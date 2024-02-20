@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "ReaderJS",
+    "description": "Webpage reader with a natural sounding voice",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "reader_icon.jpeg"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://*/*",
+            "http://*/*"
+          ]
+        }
+    ]
+}
